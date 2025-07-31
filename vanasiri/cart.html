@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Vanasiri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Vanasiri</h1>
+                    <span>Premium Plants & Garden Center</span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="cart.html" class="cart-icon active">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Header -->
+    <section class="cart-header">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-content">
+        <div class="container">
+            <div class="cart-layout">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-empty" id="cart-empty">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Your cart is empty</h3>
+                        <p>Looks like you haven't added any plants to your cart yet.</p>
+                        <a href="shop.html" class="btn btn-primary">Start Shopping</a>
+                    </div>
+                    
+                    <div class="cart-items-list" id="cart-items-list" style="display: none;">
+                        <div class="cart-item" id="cart-item-template">
+                            <div class="cart-item-image">
+                                <img src="" alt="">
+                            </div>
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-name"></h3>
+                                <p class="cart-item-price"></p>
+                            </div>
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <div class="cart-item-total">
+                                <span class="item-total"></span>
+                            </div>
+                            <button class="remove-item">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">₹0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Shipping:</span>
+                        <span id="shipping">₹100</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tax:</span>
+                        <span id="tax">₹0</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span id="total">₹100</span>
+                    </div>
+                    
+                    <button class="btn btn-primary checkout-btn" onclick="proceedToCheckout()">
+                        Proceed to Checkout
+                    </button>
+                    
+                    <div class="cart-actions">
+                        <a href="shop.html" class="btn btn-secondary">Continue Shopping</a>
+                        <button class="btn btn-outline" onclick="clearCart()">Clear Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vanasiri</h3>
+                    <p>Premium Plants & Garden Center</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 9880341811</p>
+                    <p><i class="fas fa-envelope"></i> info@vanasiri.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vanasiri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html> 

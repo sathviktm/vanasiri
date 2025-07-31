@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanasiri Demo - Plant Ecommerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .demo-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .demo-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .feature-list li:before {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        .test-instructions {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        .test-instructions h4 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        .test-instructions ol {
+            padding-left: 1.5rem;
+        }
+        .test-instructions li {
+            margin-bottom: 0.5rem;
+        }
+        .demo-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .demo-buttons .btn {
+            flex: 1;
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Vanasiri</h1>
+                    <span>Premium Plants & Garden Center</span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Demo Content -->
+    <section class="demo-content">
+        <div class="demo-section">
+            <h1>🌱 Vanasiri Plant Ecommerce Website Demo</h1>
+            <p>Welcome to the demo of our modern plant ecommerce website! This is a fully functional website built with HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>✨ Key Features</h2>
+            <ul class="feature-list">
+                <li><strong>Responsive Design:</strong> Works perfectly on desktop, tablet, and mobile devices</li>
+                <li><strong>Shopping Cart:</strong> Add products, manage quantities, persistent storage</li>
+                <li><strong>Product Filtering:</strong> Filter by category, price range, and size</li>
+                <li><strong>Real-time Search:</strong> Search products as you type</li>
+                <li><strong>Contact Form:</strong> Form validation and submission handling</li>
+                <li><strong>Modern UI:</strong> Clean, professional design with smooth animations</li>
+                <li><strong>Easy Customization:</strong> Simple configuration file for easy modifications</li>
+                <li><strong>Cross-browser Compatible:</strong> Works on all modern browsers</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2>🧪 How to Test the Website</h2>
+            
+            <div class="test-instructions">
+                <h4>1. Shopping Experience</h4>
+                <ol>
+                    <li>Go to the <strong>Shop</strong> page to browse products</li>
+                    <li>Use filters to narrow down products by category, price, or size</li>
+                    <li>Search for specific plants using the search bar</li>
+                    <li>Click "Add to Cart" on any product</li>
+                    <li>View your cart by clicking the cart icon in the header</li>
+                    <li>Modify quantities or remove items from cart</li>
+                    <li>Proceed to checkout to see the complete flow</li>
+                </ol>
+            </div>
+
+            <div class="test-instructions">
+                <h4>2. Contact Form</h4>
+                <ol>
+                    <li>Navigate to the <strong>Contact</strong> page</li>
+                    <li>Try submitting the form with invalid data to see validation</li>
+                    <li>Fill in valid information and submit to see success message</li>
+                    <li>Test phone number formatting and character counter</li>
+                </ol>
+            </div>
+
+            <div class="test-instructions">
+                <h4>3. Responsive Design</h4>
+                <ol>
+                    <li>Resize your browser window to see responsive behavior</li>
+                    <li>Test on mobile devices or use browser dev tools</li>
+                    <li>Check that all elements adapt properly to different screen sizes</li>
+                </ol>
+            </div>
+
+            <div class="test-instructions">
+                <h4>4. Cart Persistence</h4>
+                <ol>
+                    <li>Add items to cart</li>
+                    <li>Refresh the page or navigate to different pages</li>
+                    <li>Verify that cart items are still there</li>
+                    <li>Close and reopen the browser to test localStorage</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>🔧 Customization Guide</h2>
+            <p>The website is designed to be easily customizable. Here's how to modify it:</p>
+            
+            <div class="test-instructions">
+                <h4>Quick Customization</h4>
+                <ol>
+                    <li><strong>Company Info:</strong> Edit <code>config.js</code> to change company details</li>
+                    <li><strong>Products:</strong> Modify the products array in <code>shop.js</code></li>
+                    <li><strong>Colors:</strong> Update the theme colors in <code>config.js</code></li>
+                    <li><strong>Contact Info:</strong> Update contact details in all HTML files</li>
+                    <li><strong>Categories:</strong> Add/remove categories in <code>config.js</code></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>📱 Browser Compatibility</h2>
+            <p>This website works on all modern browsers:</p>
+            <ul class="feature-list">
+                <li>Chrome 60+</li>
+                <li>Firefox 55+</li>
+                <li>Safari 12+</li>
+                <li>Edge 79+</li>
+            </ul>
+        </div>
+
+        <div class="demo-buttons">
+            <a href="index.html" class="btn btn-primary">
+                <i class="fas fa-home"></i> Go to Homepage
+            </a>
+            <a href="shop.html" class="btn btn-secondary">
+                <i class="fas fa-shopping-bag"></i> Browse Shop
+            </a>
+            <a href="about.html" class="btn btn-outline">
+                <i class="fas fa-info-circle"></i> About Us
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+                <i class="fas fa-envelope"></i> Contact
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vanasiri</h3>
+                    <p>Premium Plants & Garden Center</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 9880341811</p>
+                    <p><i class="fas fa-envelope"></i> info@vanasiri.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vanasiri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Vanasiri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Vanasiri</h1>
+                    <span>Premium Plants & Garden Center</span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html" class="active">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <h1>Shop Plants</h1>
+            <p>Discover our collection of premium plants for every space</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters">
+                    <h3>Filters</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <label><input type="checkbox" value="indoor"> Indoor Plants</label>
+                        <label><input type="checkbox" value="outdoor"> Outdoor Plants</label>
+                        <label><input type="checkbox" value="succulents"> Succulents</label>
+                        <label><input type="checkbox" value="flowering"> Flowering Plants</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <label><input type="radio" name="price" value="0-500"> Under ₹500</label>
+                        <label><input type="radio" name="price" value="500-1000"> ₹500 - ₹1000</label>
+                        <label><input type="radio" name="price" value="1000-2000"> ₹1000 - ₹2000</label>
+                        <label><input type="radio" name="price" value="2000+"> Above ₹2000</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Size</h4>
+                        <label><input type="checkbox" value="small"> Small</label>
+                        <label><input type="checkbox" value="medium"> Medium</label>
+                        <label><input type="checkbox" value="large"> Large</label>
+                    </div>
+
+                    <button class="btn btn-primary" onclick="applyFilters()">Apply Filters</button>
+                    <button class="btn btn-secondary" onclick="clearFilters()">Clear All</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="products-section">
+                    <div class="products-header">
+                        <div class="products-count">
+                            <span id="product-count">12</span> products found
+                        </div>
+                        <div class="sort-options">
+                            <select id="sort-select">
+                                <option value="default">Sort by</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name">Name: A to Z</option>
+                                <option value="popular">Most Popular</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product-grid" id="products-grid">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vanasiri</h3>
+                    <p>Premium Plants & Garden Center</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 9880341811</p>
+                    <p><i class="fas fa-envelope"></i> info@vanasiri.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sagara, Karnataka</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vanasiri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html> 
